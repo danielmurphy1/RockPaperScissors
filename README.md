@@ -11,7 +11,7 @@ This app allows the user to play rock, paper, scissors against the computer.
 ### Instructions
 
 ---
-Play Rock, Paper, Scissors here.
+Play Rock, Paper, Scissors [here](https://danielmurphy1.github.io/RockPaperScissors/)
 
 Click one of the images on the left - either rock, paper, or scissors. The computer will select its choice and display an impage of its choice on the right. The center coloum will populate with your choice, the computer's choice, and whether you win, you lose, or you tie.
 
