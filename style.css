@@ -1,7 +1,4 @@
- /* *{
-border: red 1px solid; 
 
-} */
 
 body{
     background-color:rgba(241, 11, 202, 0.71);
@@ -13,14 +10,6 @@ header{
     justify-content: center;
 }
 
-h1{
-    /* color: green; */
-    
-}
-
-img{
-    /* background-color: olive; */
-}
 
 main{
     display: flex;
@@ -29,7 +18,6 @@ main{
 #user-container{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     align-items: center;
     height: 100%;
     width: 40%;
@@ -41,7 +29,6 @@ main{
     width: 20%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     align-items: center;
     text-align: center;
     height: 100%;
@@ -52,7 +39,6 @@ main{
     width: 40%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     align-items: center;
     height: 100%;
     width: 40%;
