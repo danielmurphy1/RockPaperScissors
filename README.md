@@ -13,7 +13,7 @@ This app allows the user to play rock, paper, scissors against the computer.
 ---
 Play Rock, Paper, Scissors [here](https://danielmurphy1.github.io/RockPaperScissors/)
 
-Click one of the images on the left - either rock, paper, or scissors. The computer will select its choice and display an impage of its choice on the right. The center coloum will populate with your choice, the computer's choice, and whether you win, you lose, or you tie.
+Click one of the images on the left - either rock, paper, or scissors. The computer will select its choice and display an image of its choice on the right. The center column will populate with your choice, the computer's choice, and whether you win, you lose, or you tie.
 
 ### Languages and Markup Used
 
@@ -23,10 +23,10 @@ Click one of the images on the left - either rock, paper, or scissors. The compu
 - CSS
 - Javascript
 
-Digital Clock App was created without using any libraries or frameworks.
+Rock, Paper, Scissors Game was created without using any libraries or frameworks.
 
 ### Author
 
 ---
 
-Dan Murphy
+Dan Murphy, Software Developer

@@ -3,17 +3,19 @@ const images = document.querySelectorAll(".symbol").forEach((item) => {
   item.addEventListener("click", run);
 });
 
-function run() {
-  let computerSymbol = chooseComputerSymbol();
-  let userSymbol = chooseUserSymbol(event);
-  compareSymbols(userSymbol, computerSymbol);
+const computerContainer = document.getElementById("computer-container");
+
+function run(e) {
+  const chosenSymbol = e.target.id;
+  const computerSymbol = chooseComputerSymbol();
+  outputResults(chosenSymbol, "user", "user-paragraph");
+  compareSymbols(chosenSymbol, computerSymbol);
 }
 
 function chooseComputerSymbol() {
-  let number = Math.floor(Math.random() * 3);
+  const number = Math.floor(Math.random() * 3);
   let computerSymbol = "";
-  let computerChoice = document.createElement("img");
-  let computerContainer = document.getElementById("computer-container");
+  const computerChoice = document.createElement("img");
   
   if (computerContainer.hasChildNodes()) {
     computerContainer.removeChild(computerContainer.firstChild);
@@ -36,30 +38,16 @@ function chooseComputerSymbol() {
       computerContainer.appendChild(computerChoice);
       break;
     default:
+      break;
   }
   outputResults(computerSymbol, "computer", "computer-paragraph");
 
   return computerSymbol;
 }
 
-function chooseUserSymbol(e) {
-  let userSymbol = "";
-  
-  if (e.target.classList.contains("rock")) {
-    userSymbol = "rock";
-  } else if (e.target.classList.contains("paper")) {
-    userSymbol = "paper";
-  } else if (e.target.classList.contains("scissors")) {
-    userSymbol = "scissors";
-  }
-  outputResults(userSymbol, "user", "user-paragraph");
-  
-  return userSymbol;
-}
-
 function compareSymbols(userSymbol, computerSymbol) {
   let result = "";
- 
+
   if (userSymbol === computerSymbol) {
     result = "It's a tie!";
   } else if (
@@ -78,8 +66,8 @@ function compareSymbols(userSymbol, computerSymbol) {
 }
 
 function outputResults(outPut, headingType, paragraphType){
-  let paragraph = document.getElementById(paragraphType);
-  let resultHeading = document.getElementById(headingType);
+  const paragraph = document.getElementById(paragraphType);
+  const resultHeading = document.getElementById(headingType);
   if (paragraph.hasChildNodes()){
     paragraph.remove();
   }
