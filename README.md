@@ -29,4 +29,4 @@ Rock, Paper, Scissors Game was created without using any libraries or frameworks
 
 ---
 
-Dan Murphy, Software Developer
+- Dan Murphy, Full-Stack Developer, https://www.linkedin.com/in/daniel-murphy-055/
